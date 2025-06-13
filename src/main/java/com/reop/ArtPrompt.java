@@ -8,25 +8,35 @@ import java.util.Random;
 import java.util.Calendar;
 
 public class ArtPrompt {
-    private String noun;
     
+    //declare variables for the prompt
+    private String noun; // a noun for the subject of the prompt
+    private String[] adjectives = new String[3]; // 3 adjectives to describe the noun
+    
+    //class constructor
     public ArtPrompt() {
         getRandomArtPromptInfo();
     }
     
+    //Get methods
     public void getRandomArtPromptInfo() {
-        //Character Physical Descriptions
+        //set random noun
         noun = readTextFileAndGetRandomLine("ArtPromptInfo/nouns.txt");
+        //set random adjectives
+        adjectives[0] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
+        adjectives[1] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
+        adjectives[2] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
     }
     
     public String getArtPromptDetails() {
         //make string of details
-        String details = "A(n) " + noun;
+        String details = "A(n) " + adjectives[0] + ", " + adjectives[1] + ", and " + adjectives[2] + " " + noun;
         
         //return string
         return details;
     }
     
+    //Read and Write methods
     public String readTextFileAndGetRandomLine(String path) {
         String filePath = path;
         //count the number of lines

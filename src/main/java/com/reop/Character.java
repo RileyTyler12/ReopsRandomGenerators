@@ -8,6 +8,7 @@ import java.util.Random;
 import java.util.Calendar;
 
 public class Character {
+    //declare variables for the character
     private String fName;
     private String lName;
     private String age;
@@ -20,10 +21,12 @@ public class Character {
     private String[] skills = new String[3];
     private String[] traits = new String[3];
     
+    //class constructor
     public Character() {
         getRandomCharacterInfo();
     }
     
+    //Get methods
     public void getRandomCharacterInfo() {
         //Character Physical Descriptions
         fName = readTextFileAndGetRandomLine("CharacterInfo/names.txt");
@@ -62,6 +65,7 @@ public class Character {
         return details;
     }
     
+    //Read and Write methods
     public String readTextFileAndGetRandomLine(String path) {
         String filePath = path;
         //count the number of lines
