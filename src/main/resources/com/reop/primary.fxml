@@ -21,45 +21,20 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <TabPane prefHeight="500.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane prefHeight="800.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Random Art Prompt (WIP)">
-                     <content>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Draw...">
-                                 <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
-                                 </VBox.margin>
-                              </Text>
-                              <TextArea fx:id="artPromptTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will be put here. You can then edit it as liked before saving.">
-                                 <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
-                                 </VBox.margin>
-                              </TextArea>
-                              <Button fx:id="submitRandomPromptButton" contentDisplay="TOP" onAction="#submitArtPromptGen" text="Generate Prompt">
-                                 <effect>
-                                    <DropShadow />
-                                 </effect>
-                                 <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
-                                 </VBox.margin>
-                              </Button>
-                           </children>
-                        </VBox>
-                     </content></Tab>
                 <Tab text="Character Generator">
                      <content>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Character Details (Editable):">
                                  <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
+                                    <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
                               <TextArea fx:id="characterTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will be put here. You can then edit it as liked before saving.">
                                  <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
+                                    <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </TextArea>
                               <Button fx:id="saveButton" contentDisplay="TOP" graphicTextGap="20.0" mnemonicParsing="false" onAction="#saveCharacter" text="Save Character To File" visible="false">
@@ -67,21 +42,46 @@
                                     <DropShadow />
                                  </effect>
                                  <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
+                                    <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button fx:id="submitButton" contentDisplay="TOP" onAction="#submitCharacterGen" text="Generate Character">
+                              <Button fx:id="submitButton" contentDisplay="TOP" onAction="#submitCharacterGen" text="Generate New Character">
                                  <effect>
                                     <DropShadow />
                                  </effect>
                                  <VBox.margin>
-                                    <Insets bottom="20.0" top="20.0" />
+                                    <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </Button>
                            </children>
                         </VBox>
                      </content>
                 </Tab>
+                <Tab text="Random Art Prompt (WIP)">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Draw...">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextArea fx:id="artPromptTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will be put here. You can then edit it as liked before saving.">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <Button fx:id="submitRandomPromptButton" contentDisplay="TOP" onAction="#submitArtPromptGen" text="Generate Prompt">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </content></Tab>
               </tabs>
             </TabPane>
             <Label fx:id="errorText" styleClass="error" text="Error Placeholder" visible="false" wrapText="true">
@@ -93,6 +93,9 @@
                <effect>
                   <DropShadow />
                </effect>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
             </Button>
          </children>
          <padding>
