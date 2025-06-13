@@ -12,6 +12,7 @@ public class ArtPrompt {
     //declare variables for the prompt
     private String noun; // a noun for the subject of the prompt
     private String[] adjectives = new String[3]; // 3 adjectives to describe the noun
+    private String[] colors = new String[3]; // 3 basic colors
     
     //class constructor
     public ArtPrompt() {
@@ -26,11 +27,18 @@ public class ArtPrompt {
         adjectives[0] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
         adjectives[1] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
         adjectives[2] = readTextFileAndGetRandomLine("ArtPromptInfo/adjectives.txt");
+        //set random colors
+        colors[0] = readTextFileAndGetRandomLine("ArtPromptInfo/colors.txt");
+        colors[1] = readTextFileAndGetRandomLine("ArtPromptInfo/colors.txt");
+        colors[2] = readTextFileAndGetRandomLine("ArtPromptInfo/colors.txt");
+        
     }
     
     public String getArtPromptDetails() {
         //make string of details
-        String details = "A(n) " + adjectives[0] + ", " + adjectives[1] + ", and " + adjectives[2] + " " + noun;
+        String details = "A(n) " + adjectives[0] + ", " + adjectives[1] + ", and " + adjectives[2] + " " + noun + "\n"
+                + "\n"
+                + "Incorporate the colors: " + colors[0] + ", " + colors[1] + ", and " + colors[2];
         
         //return string
         return details;
