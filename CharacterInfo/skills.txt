@@ -1,0 +1,44 @@
+Enchanting
+Smithing
+Heavy Armor
+Block
+Two-Handed
+One-Handed
+Archery
+Light Armor
+Sneak
+Lockpicking
+Pickpocket
+Speech
+Alchemy
+Fighting
+Shooting
+Spell casting
+Rituals
+Prayers
+Channeling
+Attuning
+Climbing
+Swimming
+Running
+Lockpicking
+Forgery
+Disarming traps
+Blacksmithing
+Crafting
+Alchemy
+Haggling
+Sneaking
+Tinker
+Hunting
+Foraging
+Fishing
+Navigation
+Animal Handling
+Riding
+Flying
+Throwing
+Sneak attack
+Wrestling
+Grappling
+Tumbling

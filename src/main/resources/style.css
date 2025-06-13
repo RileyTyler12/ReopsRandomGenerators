@@ -1,0 +1,85 @@
+/* Styles for JavaFX SceneBuilder Application: ReopCharacterGenerator */
+
+.root {
+    -fx-background-color: purple;
+}
+
+.label {
+    -fx-font-weight: bold;
+}
+
+#title {
+    -fx-font-size: 24px;
+}
+
+/* Button Stylings */
+.button {
+    -fx-background-color: rgba(8, 75, 131, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 4px;
+    -fx-text-fill: white;
+    -fx-padding: 2em;
+}
+
+.button:default {
+    -fx-background-color: rgba(187, 230, 228, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 4px;
+    -fx-text-fill: white;
+    -fx-padding: 2em;
+}
+
+.button:cancel {
+    -fx-background-color: rgba(255, 0, 0, 0.5);;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 4px;
+    -fx-text-fill: white;
+    -fx-padding: 2em;
+}
+
+.button:hover {
+    -fx-background-color: darkblue;
+}
+
+.button:default:hover {
+    -fx-background-color: darkgreen;
+}
+
+.button:cancel:hover {
+    -fx-background-color: darkred;
+}
+
+/* Text Area Stylings */
+.text-area *.text {
+    -fx-text-alignment: center;
+}
+
+/* Tab Pane Stylings */
+.tab-pane {
+    -fx-border-width: 6px;
+    -fx-border-style: solid;
+    -fx-border-color: pink;
+    -fx-border-radius: 4px;
+}
+
+.tab-header-background {
+    -fx-background-color: pink;
+}
+
+.tab:top {
+    -fx-background-color: lightpink;
+}
+
+.tab:selected:top {
+    -fx-background-color: pink;
+}
+
+.tab-content-area {
+    -fx-background-color: pink;
+}

@@ -1,0 +1,23 @@
+Human
+Elf
+Half-Elf, Half-Human
+Dark Elf
+Half-Dark Elf, Half-Human
+Demon
+Half-Demon, Half-Human
+Half-Demon, Half-Elf
+Half-Demon, Half-Dark Elf
+Orc
+Half-Orc, Half-Human
+Half-Orc, Half-Elf
+Half-Orc, Half-Dark Elf
+Half-Orc, Half-Demon
+Vampire Human
+Vampire Elf
+Vampire Half-Elf, Half-Human
+Vampire Dark Elf
+Vampire Half-Dark Elf, Half-Human
+Vampire Orc
+Vampire Half-Orc, Half-Human
+Vampire Half-Orc, Half-Elf
+Vampire Half-Orc, Half-Dark Elf
