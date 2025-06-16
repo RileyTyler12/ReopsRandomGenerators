@@ -23,7 +23,7 @@
             </Label>
             <TabPane prefHeight="800.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Character Generator">
+                <Tab text="Fantasy Character">
                      <content>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
@@ -32,7 +32,7 @@
                                     <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <TextArea fx:id="characterTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will be put here. You can then edit it as liked before saving.">
+                              <TextArea fx:id="characterTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will appear here. You can then edit it as liked before saving.">
                                  <VBox.margin>
                                     <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
@@ -57,7 +57,7 @@
                         </VBox>
                      </content>
                 </Tab>
-                <Tab text="Random Art Prompt (WIP)">
+                <Tab text="Art Prompt">
                      <content>
                         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                            <children>
@@ -66,7 +66,7 @@
                                     <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <TextArea fx:id="artPromptTextArea" disable="true" prefWidth="500.0" promptText="Your generated character info will be put here. You can then edit it as liked before saving.">
+                              <TextArea fx:id="artPromptTextArea" disable="true" prefWidth="500.0" promptText="Your generated art prompt will appear here.">
                                  <VBox.margin>
                                     <Insets bottom="10.0" top="10.0" />
                                  </VBox.margin>

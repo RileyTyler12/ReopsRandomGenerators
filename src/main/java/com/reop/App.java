@@ -20,7 +20,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("primary"));
         scene.getStylesheets().add("style.css");  
         stage.setScene(scene);
-        stage.setTitle("Reop Character Generator");
+        stage.setTitle("Reop's Random Generators");
         stage.show();
     }
 
